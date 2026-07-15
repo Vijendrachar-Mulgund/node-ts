@@ -4,7 +4,8 @@
     // File Layout
     "rootDir": "./src",
     "outDir": "./dist",
-
+    "allowImportingTsExtensions": true,
+    "rewriteRelativeImportExtensions": true,
     "module": "nodenext",
     "target": "es2022",
     "types": ["node"],
