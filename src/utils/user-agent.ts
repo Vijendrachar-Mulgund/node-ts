@@ -22,9 +22,6 @@ export function getInstallCommand(userAgent: string | null) {
 export function getExecCommand(userAgent: string | null) {
   if (!userAgent) return;
 
-  // Run a locally-installed binary (e.g. the project's own tsc). Use `exec`, not
-  // `dlx`/`npx`: those fetch a *remote* package, and `tsc` on npm is a decoy that
-  // just prints "This is not the tsc command you are looking for".
   switch (userAgent) {
     case "pnpm":
     case "yarn":
