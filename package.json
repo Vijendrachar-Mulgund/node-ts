@@ -6,8 +6,12 @@
   "bin": {
     "node-ts": "dist/cli.js"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "tsc",
+    "prepack": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

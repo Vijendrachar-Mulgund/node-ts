@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-"useStrict";
+"use strict";
+
 import { detectFromUserAgent } from "./utils/user-agent.ts";
 import { getArguments } from "./utils/arguments.ts";
 import { createNodeProject } from "./index.ts";
